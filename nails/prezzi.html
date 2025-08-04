@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prezzi - Nails</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-gem"></i>
+                <span>Nails</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="chi-siamo.html" class="nav-link">Chi Siamo</a></li>
+                <li><a href="servizi.html" class="nav-link">Servizi</a></li>
+                <li><a href="galleria.html" class="nav-link">Galleria</a></li>
+                <li><a href="prezzi.html" class="nav-link active">Prezzi</a></li>
+                <li><a href="prenotazioni.html" class="nav-link">Prenotazioni</a></li>
+                <li><a href="contatti.html" class="nav-link">Contatti</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="nail-polish-drip drip-1"></div>
+        <div class="nail-polish-drip drip-2"></div>
+        <div class="container">
+            <h1>Listino Prezzi</h1>
+            <p>Trasparenza e qualità per ogni budget</p>
+        </div>
+    </section>
+
+    <!-- Pricing Categories -->
+    <section class="pricing-categories">
+        <div class="container">
+            <div class="categories-nav">
+                <button class="category-btn active" data-category="manicure">
+                    <i class="fas fa-hand-sparkles"></i>
+                    Manicure
+                </button>
+                <button class="category-btn" data-category="pedicure">
+                    <i class="fas fa-spa"></i>
+                    Pedicure
+                </button>
+                <button class="category-btn" data-category="ricostruzione">
+                    <i class="fas fa-gem"></i>
+                    Ricostruzione
+                </button>
+                <button class="category-btn" data-category="nail-art">
+                    <i class="fas fa-palette"></i>
+                    Nail Art
+                </button>
+                <button class="category-btn" data-category="extra">
+                    <i class="fas fa-plus"></i>
+                    Extra
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Manicure Pricing -->
+    <section class="pricing-section active" id="manicure">
+        <div class="container">
+            <div class="section-header">
+                <h2>Servizi Manicure</h2>
+                <p>Cura completa delle mani con prodotti premium</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <div class="service-icon">
+                            <i class="fas fa-hand-sparkles"></i>
+                        </div>
+                        <h3>Manicure Classica</h3>
+                        <div class="price">€20</div>
+                    </div>
+                    <div class="pricing-content">
+                        <p class="service-description">
+                            Il trattamento base per mani sempre curate e ordinate
+                        </p>
+                        <ul class="service-includes">
+                            <li><i class="fas fa-check"></i> Limatura e modellatura</li>
+                            <li><i class="fas fa-check"></i> Cura cuticole</li>
+                            <li><i class="fas fa-check"></i> Massaggio mani</li>
+                            <li><i class="fas fa-check"></i> Smalto tradizionale</li>
+                        </ul>
+                        <div class="service-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>45 minuti</span>
+                        </div>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="prenotazioni.html" class="btn-book">Prenota</a>
+                    </div>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="featured-badge">Più Richiesto</div>
+                    <div class="pricing-header">
+                        <div class="service-icon">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <h3>Semipermanente Mani</h3>
+                        <div class="price">€30</div>
+                    </div>
+                    <div class="pricing-content">
+                        <p class="service-description">
+                            Smalto gel duraturo fino a 3 settimane senza scheggiature
+                        </p>
+                        <ul class="service-includes">
+                            <li><i class="fas fa-check"></i> Preparazione completa</li>
+                            <li><i class="fas fa-check"></i> Base coat professionale</li>
+                            <li><i class="fas fa-check"></i> Due mani di colore</li>
+                            <li><i class="fas fa-check"></i> Top coat sigillante</li>
+                            <li><i class="fas fa-check"></i> Catalizzazione UV/LED</li>
+                        </ul>
+                        <div class="service-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>60 minuti</span>
+                        </div>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="prenotazioni.html" class="btn-book">Prenota</a>
+                    </div>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <div class="service-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h3>Manicure Luxury</h3>
+                        <div class="price">€35</div>
+                    </div>
+                    <div class="pricing-content">
+                        <p class="service-description">
+                            Trattamento premium con prodotti di lusso e coccole extra
+                        </p>
+                        <ul class="service-includes">
+                            <li><i class="fas fa-check"></i> Manicure completa</li>
+                            <li><i class="fas fa-check"></i> Scrub esfoliante</li>
+                            <li><i class="fas fa-check"></i> Maschera nutriente</li>
+                            <li><i class="fas fa-check"></i> Massaggio prolungato</li>
+                            <li><i class="fas fa-check"></i> Semipermanente premium</li>
+                        </ul>
+                        <div class="service-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>75 minuti</span>
+                        </div>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="prenotazioni.html" class="btn-book">Prenota</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pedicure Pricing -->
+    <section class="pricing-section" id="pedicure">
+        <div class="container">
+            <div class="section-header">
+                <h2>Servizi Pedicure</h2>
+                <p>Benessere e bellezza per i tuoi piedi</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <div class="service-icon">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <h3>Pedicure Estetico</h3>
+                        <div class="price">€25</div>
+                    </div>
+                    <div class="pricing-content">
+                        <p class="service-description">
+                            Trattamento completo per piedi belli e sani
+                        </p>
+                        <ul class="service-includes">
+                            <li><i class="fas fa-check"></i> Pediluvio rilassante</li>
+                            <li><i class="fas fa-check"></i> Rimozione callosità</li>
+                            <li><i class="fas fa-check"></i> Cura unghie piedi</li>
+                            <li><i class="fas fa-check"></i> Massaggio piedi</li>
+                            <li><i class="fas fa-check"></i> Smalto tradizionale</li>
+                        </ul>
+                        <div class="service-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>60 minuti</span>
+                        </div>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="prenotazioni.html" class="btn-book">Prenota</a>
+                    </div>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <div class="service-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Semipermanente Piedi</h3>
+                        <div class="price">€28</div>
+                    </div>
+                    <div class="pricing-content">
+                        <p class="service-description">
+                            Gel sui piedi per lunga durata e resistenza
+                        </p>
+                        <ul class="service-includes">
+                            <li><i class="fas fa-check"></i> Pedicure completo</li>
+                            <li><i class="fas fa-check"></i> Preparazione per gel</li>
+                            <li><i class="fas fa-check"></i> Applicazione semipermanente</li>
+                            <li><i class="fas fa-check"></i> Catalizzazione</li>
+                            <li><i class="fas fa-check"></i> Finitura perfetta</li>
+                        </ul>
+                        <div class="service-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>75 minuti</span>
+                        </div>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="prenotazioni.html" class="btn-book">Prenota</a>
+                    </div>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <div class="service-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Pedicure Curativo</h3>
+                        <div class="price">€40</div>
+                    </div>
+                    <div class="pricing-content">
+                        <p class="service-description">
+                            Trattamento specifico per piedi con problematiche
+                        </p>
+                        <ul class="service-includes">
+                            <li><i class="fas fa-check"></i> Valutazione podologica</li>
+                            <li><i class="fas fa-check"></i> Trattamento callosità</li>
+                            <li><i class="fas fa-check"></i> Cura unghie incarnite</li>
+                            <li><i class="fas fa-check"></i> Prodotti specifici</li>
+                            <li><i class="fas fa-check"></i> Consigli personalizzati</li>
+                        </ul>
+                        <div class="service-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>90 minuti</span>
+                        </div>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="prenotazioni.html" class="btn-book">Prenota</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ricostruzione Pricing -->
+    <section class="pricing-section" id="ricostruzione">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ricostruzione Unghie</h2>
+                <p>Unghie perfette, forti e durature</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <div class="service-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3>Ricostruzione Gel</h3>
+                        <div class="price">€50</div>
+                    </div>
+                    <div class="pricing-content">
+                        <p class="service-description">
+                            Unghie ricostruite in gel trasparente o colorato
+                        </p>
+                        <ul class="service-includes">
+                            <li><i class="fas fa-check"></i> Preparazione unghia naturale</li>
+                            <li><i class="fas fa-check"></i> Applicazione tip/cartine</li>
+                            <li><i class="fas fa-check"></i> Stesura gel costruttore</li>
+                            <li><i class="fas fa-check"></i> Modellatura perfetta</li>
+                            <li><i class="fas fa-check"></i> Finitura lucida</li>
+                        </ul>
+                        <div class="service-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>120 minuti</span>
+                        </div>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="prenotazioni.html" class="btn-book">Prenota</a>
+                    </div>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <div class="service-icon">
+                            <i class="fas fa-redo"></i>
+                        </div>
+                        <h3>Refill Unghie</h3>
+                        <div class="price">€35</div>
+                    </div>
+                    <div class="pricing-content">
+                        <p class="service-description">
+                            Ritocco ricrescita per ricostruzioni esistenti
+                        </p>
+                        <ul class="service-includes">
+                            <li><i class="fas fa-check"></i> Limatura ricrescita</li>
+                            <li><i class="fas fa-check"></i> Riempimento gel</li>
+                            <li><i class="fas fa-check"></i> Rimodellatura</li>
+                            <li><i class="fas fa-check"></i> Lucidatura finale</li>
+                            <li><i class="fas fa-check"></i> Controllo qualità</li>
+                        </ul>
+                        <div class="service-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>90 minuti</span>
+                        </div>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="prenotazioni.html" class="btn-book">Prenota</a>
+                    </div>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <div class="service-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Ricostruzione Premium</h3>
+                        <div class="price">€65</div>
+                    </div>
+                    <div class="pricing-content">
+                        <p class="service-description">
+                            Ricostruzione con prodotti di lusso e forme elaborate
+                        </p>
+                        <ul class="service-includes">
+                            <li><i class="fas fa-check"></i> Prodotti premium</li>
+                            <li><i class="fas fa-check"></i> Forme elaborate</li>
+                            <li><i class="fas fa-check"></i> Rinforzo extra</li>
+                            <li><i class="fas fa-check"></i> Finitura speciale</li>
+                            <li><i class="fas fa-check"></i> Garanzia estesa</li>
+                        </ul>
+                        <div class="service-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>150 minuti</span>
+                        </div>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="prenotazioni.html" class="btn-book">Prenota</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nail Art Pricing -->
+    <section class="pricing-section" id="nail-art">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nail Art</h2>
+                <p>Decorazioni artistiche per unghie uniche</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <div class="service-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Nail Art Base</h3>
+                        <div class="price">€5</div>
+                        <div class="price-note">per unghia</div>
+                    </div>
+                    <div class="pricing-content">
+                        <p class="service-description">
+                            Decorazioni semplici e raffinate
+                        </p>
+                        <ul class="service-includes">
+                            <li><i class="fas fa-check"></i> Pois e righe</li>
+                            <li><i class="fas fa-check"></i> French colorata</li>
+                            <li><i class="fas fa-check"></i> Sfumature semplici</li>
+                            <li><i class="fas fa-check"></i> Glitter base</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="prenotazioni.html" class="btn-book">Prenota</a>
+                    </div>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <div class="service-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Nail Art Avanzata</h3>
+                        <div class="price">€15</div>
+                        <div class="price-note">per unghia</div>
+                    </div>
+                    <div class="pricing-content">
+                        <p class="service-description">
+                            Decorazioni elaborate e dettagliate
+                        </p>
+                        <ul class="service-includes">
+                            <li><i class="fas fa-check"></i> Disegni floreali</li>
+                            <li><i class="fas fa-check"></i> Geometrie complesse</li>
+                            <li><i class="fas fa-check"></i> Effetti marmo</li>
+                            <li><i class="fas fa-check"></i> Stamping artistico</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="prenotazioni.html" class="btn-book">Prenota</a>
+                    </div>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <div class="service-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h3>Nail Art Premium</h3>
+                        <div class="price">€25</div>
+                        <div class="price-note">per unghia</div>
+                    </div>
+                    <div class="pricing-content">
+                        <p class="service-description">
+                            Creazioni artistiche con strass e decorazioni 3D
+                        </p>
+                        <ul class="service-includes">
+                            <li><i class="fas fa-check"></i> Strass Swarovski</li>
+                            <li><i class="fas fa-check"></i> Decorazioni 3D</li>
+                            <li><i class="fas fa-check"></i> Pittura a mano</li>
+                            <li><i class="fas fa-check"></i> Effetti speciali</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="prenotazioni.html" class="btn-book">Prenota</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Extra Services Pricing -->
+    <section class="pricing-section" id="extra">
+        <div class="container">
+            <div class="section-header">
+                <h2>Servizi Extra</h2>
+                <p>Completiamo la tua esperienza di bellezza</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <div class="service-icon">
+                            <i class="fas fa-eraser"></i>
+                        </div>
+                        <h3>Rimozione Smalto</h3>
+                        <div class="price">€10</div>
+                    </div>
+                    <div class="pricing-content">
+                        <p class="service-description">
+                            Rimozione professionale e sicura
+                        </p>
+                        <ul class="service-includes">
+                            <li><i class="fas fa-check"></i> Rimozione delicata</li>
+                            <li><i class="fas fa-check"></i> Cura post-rimozione</li>
+                            <li><i class="fas fa-check"></i> Idratazione unghie</li>
+                        </ul>
+                        <div class="service-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>20 minuti</span>
+                        </div>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="prenotazioni.html" class="btn-book">Prenota</a>
+                    </div>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <div class="service-icon">
+                            <i class="fas fa-hand-holding-heart"></i>
+                        </div>
+                        <h3>Trattamento Mani</h3>
+                        <div class="price">€15</div>
+                    </div>
+                    <div class="pricing-content">
+                        <p class="service-description">
+                            Maschera nutriente e massaggio intensivo
+                        </p>
+                        <ul class="service-includes">
+                            <li><i class="fas fa-check"></i> Scrub esfoliante</li>
+                            <li><i class="fas fa-check"></i> Maschera idratante</li>
+                            <li><i class="fas fa-check"></i> Massaggio rilassante</li>
+                        </ul>
+                        <div class="service-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>30 minuti</span>
+                        </div>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="prenotazioni.html" class="btn-book">Prenota</a>
+                    </div>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <div class="service-icon">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <h3>French Manicure</h3>
+                        <div class="price">€5</div>
+                        <div class="price-note">aggiuntivo</div>
+                    </div>
+                    <div class="pricing-content">
+                        <p class="service-description">
+                            Il classico intramontabile
+                        </p>
+                        <ul class="service-includes">
+                            <li><i class="fas fa-check"></i> French classica</li>
+                            <li><i class="fas fa-check"></i> French colorata</li>
+                            <li><i class="fas fa-check"></i> French inversa</li>
+                        </ul>
+                        <div class="service-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>+15 minuti</span>
+                        </div>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="prenotazioni.html" class="btn-book">Prenota</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section class="packages-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Pacchetti Speciali</h2>
+                <p>Risparmia con le nostre offerte combinate</p>
+            </div>
+            <div class="packages-grid">
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>Pacchetto Bellezza</h3>
+                        <div class="package-price">
+                            <span class="original-price">€55</span>
+                            <span class="discounted-price">€45</span>
+                        </div>
+                        <div class="savings">Risparmi €10</div>
+                    </div>
+                    <div class="package-content">
+                        <ul class="package-includes">
+                            <li><i class="fas fa-check"></i> Semipermanente mani</li>
+                            <li><i class="fas fa-check"></i> Pedicure estetico</li>
+                            <li><i class="fas fa-check"></i> Trattamento mani</li>
+                        </ul>
+                        <div class="package-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>2 ore e 15 minuti</span>
+                        </div>
+                    </div>
+                    <div class="package-footer">
+                        <a href="prenotazioni.html" class="btn-book">Prenota Pacchetto</a>
+                    </div>
+                </div>
+
+                <div class="package-card featured">
+                    <div class="featured-badge">Più Conveniente</div>
+                    <div class="package-header">
+                        <h3>Pacchetto Luxury</h3>
+                        <div class="package-price">
+                            <span class="original-price">€85</span>
+                            <span class="discounted-price">€70</span>
+                        </div>
+                        <div class="savings">Risparmi €15</div>
+                    </div>
+                    <div class="package-content">
+                        <ul class="package-includes">
+                            <li><i class="fas fa-check"></i> Ricostruzione gel</li>
+                            <li><i class="fas fa-check"></i> Nail art avanzata (2 unghie)</li>
+                            <li><i class="fas fa-check"></i> Semipermanente piedi</li>
+                            <li><i class="fas fa-check"></i> Trattamento mani</li>
+                        </ul>
+                        <div class="package-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>3 ore</span>
+                        </div>
+                    </div>
+                    <div class="package-footer">
+                        <a href="prenotazioni.html" class="btn-book">Prenota Pacchetto</a>
+                    </div>
+                </div>
+
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>Pacchetto Sposa</h3>
+                        <div class="package-price">
+                            <span class="original-price">€120</span>
+                            <span class="discounted-price">€100</span>
+                        </div>
+                        <div class="savings">Risparmi €20</div>
+                    </div>
+                    <div class="package-content">
+                        <ul class="package-includes">
+                            <li><i class="fas fa-check"></i> Ricostruzione premium</li>
+                            <li><i class="fas fa-check"></i> Nail art premium (5 unghie)</li>
+                            <li><i class="fas fa-check"></i> Pedicure luxury</li>
+                            <li><i class="fas fa-check"></i> Prova gratuita</li>
+                        </ul>
+                        <div class="package-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>4 ore</span>
+                        </div>
+                    </div>
+                    <div class="package-footer">
+                        <a href="prenotazioni.html" class="btn-book">Prenota Pacchetto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Info -->
+    <section class="payment-info">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h4>Metodi di Pagamento</h4>
+                    <p>Accettiamo contanti, carte di credito/debito e pagamenti digitali</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-calendar-times"></i>
+                    </div>
+                    <h4>Cancellazioni</h4>
+                    <p>Cancellazione gratuita fino a 24 ore prima dell'appuntamento</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h4>Gift Card</h4>
+                    <p>Disponibili gift card per tutti i nostri servizi, il regalo perfetto</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-percent"></i>
+                    </div>
+                    <h4>Sconti Fedeltà</h4>
+                    <p>Programma fedeltà con sconti progressivi per clienti abituali</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Pronta a Prenotare?</h2>
+                <p>Scegli il servizio perfetto per te e prenota il tuo appuntamento</p>
+                <div class="cta-buttons">
+                    <a href="prenotazioni.html" class="btn-primary">
+                        <i class="fas fa-calendar-alt"></i>
+                        Prenota Ora
+                    </a>
+                    <a href="contatti.html" class="btn-outline">
+                        <i class="fas fa-phone"></i>
+                        Chiamaci
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-gem"></i>
+                        <span>Nails</span>
+                    </div>
+                    <p>Il tuo centro estetico di fiducia nel cuore di Grottaferrata. Bellezza, qualità e professionalità dal 2022.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Servizi</h4>
+                    <ul>
+                        <li><a href="servizi.html">Manicure</a></li>
+                        <li><a href="servizi.html">Pedicure</a></li>
+                        <li><a href="servizi.html">Ricostruzione</a></li>
+                        <li><a href="servizi.html">Nail Art</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Informazioni</h4>
+                    <ul>
+                        <li><a href="chi-siamo.html">Chi Siamo</a></li>
+                        <li><a href="prezzi.html">Listino Prezzi</a></li>
+                        <li><a href="galleria.html">Galleria</a></li>
+                        <li><a href="contatti.html">Contatti</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contatti</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Via Giuseppe Garibaldi 18, Grottaferrata (RM)</p>
+                        <p><i class="fas fa-phone"></i> +39 06 123 456 789</p>
+                        <p><i class="fas fa-envelope"></i> info@nails.it</p>
+                    </div>
+                    <div class="opening-hours">
+                        <h5>Orari di Apertura</h5>
+                        <p>Lun-Ven: 9:00 - 19:00<br>Sabato: 9:00 - 17:00<br>Domenica: Chiuso</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nails. Tutti i diritti riservati. | Privacy Policy | Cookie Policy</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

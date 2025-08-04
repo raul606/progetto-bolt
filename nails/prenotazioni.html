@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prenotazioni - Nails</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-gem"></i>
+                <span>Nails</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="chi-siamo.html" class="nav-link">Chi Siamo</a></li>
+                <li><a href="servizi.html" class="nav-link">Servizi</a></li>
+                <li><a href="galleria.html" class="nav-link">Galleria</a></li>
+                <li><a href="prezzi.html" class="nav-link">Prezzi</a></li>
+                <li><a href="prenotazioni.html" class="nav-link active">Prenotazioni</a></li>
+                <li><a href="contatti.html" class="nav-link">Contatti</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="nail-polish-drip drip-1"></div>
+        <div class="nail-polish-drip drip-2"></div>
+        <div class="container">
+            <h1>Prenota il Tuo Appuntamento</h1>
+            <p>Scegli il giorno e l'ora perfetti per la tua esperienza di bellezza</p>
+        </div>
+    </section>
+
+    <!-- Booking Steps -->
+    <section class="booking-steps">
+        <div class="container">
+            <div class="steps-container">
+                <div class="step active" data-step="1">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Scegli il Servizio</h4>
+                        <p>Seleziona il trattamento desiderato</p>
+                    </div>
+                </div>
+                <div class="step" data-step="2">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Data e Ora</h4>
+                        <p>Trova il momento perfetto</p>
+                    </div>
+                </div>
+                <div class="step" data-step="3">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>I Tuoi Dati</h4>
+                        <p>Inserisci le informazioni</p>
+                    </div>
+                </div>
+                <div class="step" data-step="4">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Conferma</h4>
+                        <p>Finalizza la prenotazione</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section class="booking-form-section">
+        <div class="container">
+            <div class="booking-container">
+                <div class="booking-form-wrapper">
+                    <form class="booking-form" id="bookingForm">
+                        <!-- Step 1: Service Selection -->
+                        <div class="form-step active" id="step1">
+                            <h3>Seleziona il Servizio</h3>
+                            <div class="services-selection">
+                                <div class="service-category">
+                                    <h4>Manicure</h4>
+                                    <div class="service-options">
+                                        <label class="service-option">
+                                            <input type="radio" name="servizio" value="manicure-classica" data-price="20" data-duration="45">
+                                            <div class="option-content">
+                                                <div class="option-info">
+                                                    <span class="option-name">Manicure Classica</span>
+                                                    <span class="option-duration">45 min</span>
+                                                </div>
+                                                <div class="option-price">€20</div>
+                                            </div>
+                                        </label>
+                                        <label class="service-option">
+                                            <input type="radio" name="servizio" value="semipermanente-mani" data-price="30" data-duration="60">
+                                            <div class="option-content">
+                                                <div class="option-info">
+                                                    <span class="option-name">Semipermanente Mani</span>
+                                                    <span class="option-duration">60 min</span>
+                                                </div>
+                                                <div class="option-price">€30</div>
+                                            </div>
+                                        </label>
+                                        <label class="service-option">
+                                            <input type="radio" name="servizio" value="manicure-luxury" data-price="35" data-duration="75">
+                                            <div class="option-content">
+                                                <div class="option-info">
+                                                    <span class="option-name">Manicure Luxury</span>
+                                                    <span class="option-duration">75 min</span>
+                                                </div>
+                                                <div class="option-price">€35</div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="service-category">
+                                    <h4>Pedicure</h4>
+                                    <div class="service-options">
+                                        <label class="service-option">
+                                            <input type="radio" name="servizio" value="pedicure-estetico" data-price="25" data-duration="60">
+                                            <div class="option-content">
+                                                <div class="option-info">
+                                                    <span class="option-name">Pedicure Estetico</span>
+                                                    <span class="option-duration">60 min</span>
+                                                </div>
+                                                <div class="option-price">€25</div>
+                                            </div>
+                                        </label>
+                                        <label class="service-option">
+                                            <input type="radio" name="servizio" value="semipermanente-piedi" data-price="28" data-duration="75">
+                                            <div class="option-content">
+                                                <div class="option-info">
+                                                    <span class="option-name">Semipermanente Piedi</span>
+                                                    <span class="option-duration">75 min</span>
+                                                </div>
+                                                <div class="option-price">€28</div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="service-category">
+                                    <h4>Ricostruzione</h4>
+                                    <div class="service-options">
+                                        <label class="service-option">
+                                            <input type="radio" name="servizio" value="ricostruzione-gel" data-price="50" data-duration="120">
+                                            <div class="option-content">
+                                                <div class="option-info">
+                                                    <span class="option-name">Ricostruzione Gel</span>
+                                                    <span class="option-duration">120 min</span>
+                                                </div>
+                                                <div class="option-price">€50</div>
+                                            </div>
+                                        </label>
+                                        <label class="service-option">
+                                            <input type="radio" name="servizio" value="refill-unghie" data-price="35" data-duration="90">
+                                            <div class="option-content">
+                                                <div class="option-info">
+                                                    <span class="option-name">Refill Unghie</span>
+                                                    <span class="option-duration">90 min</span>
+                                                </div>
+                                                <div class="option-price">€35</div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="service-category">
+                                    <h4>Servizi Extra</h4>
+                                    <div class="service-options">
+                                        <label class="service-option">
+                                            <input type="radio" name="servizio" value="rimozione-smalto" data-price="10" data-duration="20">
+                                            <div class="option-content">
+                                                <div class="option-info">
+                                                    <span class="option-name">Rimozione Smalto</span>
+                                                    <span class="option-duration">20 min</span>
+                                                </div>
+                                                <div class="option-price">€10</div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-buttons">
+                                <button type="button" class="btn-next" onclick="nextStep()">Continua</button>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Date and Time -->
+                        <div class="form-step" id="step2">
+                            <h3>Scegli Data e Ora</h3>
+                            <div class="datetime-selection">
+                                <div class="date-selection">
+                                    <h4>Seleziona la Data</h4>
+                                    <input type="date" id="data" name="data" required>
+                                </div>
+                                <div class="time-selection">
+                                    <h4>Orari Disponibili</h4>
+                                    <div class="time-slots" id="timeSlots">
+                                        <!-- Time slots will be populated by JavaScript -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-buttons">
+                                <button type="button" class="btn-prev" onclick="prevStep()">Indietro</button>
+                                <button type="button" class="btn-next" onclick="nextStep()">Continua</button>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Personal Information -->
+                        <div class="form-step" id="step3">
+                            <h3>I Tuoi Dati</h3>
+                            <div class="personal-info">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="nome">Nome Completo *</label>
+                                        <input type="text" id="nome" name="nome" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email *</label>
+                                        <input type="email" id="email" name="email" required>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="telefono">Numero di Telefono *</label>
+                                        <input type="tel" id="telefono" name="telefono" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="eta">Età</label>
+                                        <select id="eta" name="eta">
+                                            <option value="">Seleziona</option>
+                                            <option value="18-25">18-25 anni</option>
+                                            <option value="26-35">26-35 anni</option>
+                                            <option value="36-45">36-45 anni</option>
+                                            <option value="46-55">46-55 anni</option>
+                                            <option value="56+">56+ anni</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group full-width">
+                                    <label for="messaggio">Note Aggiuntive</label>
+                                    <textarea id="messaggio" name="messaggio" rows="4" placeholder="Raccontaci le tue preferenze, allergie o richieste speciali..."></textarea>
+                                </div>
+                                <div class="form-group full-width">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="newsletter" name="newsletter">
+                                        <span class="checkmark"></span>
+                                        Desidero ricevere offerte speciali e novità via email
+                                    </label>
+                                </div>
+                                <div class="form-group full-width">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="privacy" name="privacy" required>
+                                        <span class="checkmark"></span>
+                                        Accetto la <a href="#" target="_blank">Privacy Policy</a> e i <a href="#" target="_blank">Termini di Servizio</a> *
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="step-buttons">
+                                <button type="button" class="btn-prev" onclick="prevStep()">Indietro</button>
+                                <button type="button" class="btn-next" onclick="nextStep()">Continua</button>
+                            </div>
+                        </div>
+
+                        <!-- Step 4: Confirmation -->
+                        <div class="form-step" id="step4">
+                            <h3>Conferma Prenotazione</h3>
+                            <div class="booking-summary">
+                                <div class="summary-card">
+                                    <h4>Riepilogo Appuntamento</h4>
+                                    <div class="summary-item">
+                                        <span class="label">Servizio:</span>
+                                        <span class="value" id="summaryService">-</span>
+                                    </div>
+                                    <div class="summary-item">
+                                        <span class="label">Data:</span>
+                                        <span class="value" id="summaryDate">-</span>
+                                    </div>
+                                    <div class="summary-item">
+                                        <span class="label">Ora:</span>
+                                        <span class="value" id="summaryTime">-</span>
+                                    </div>
+                                    <div class="summary-item">
+                                        <span class="label">Durata:</span>
+                                        <span class="value" id="summaryDuration">-</span>
+                                    </div>
+                                    <div class="summary-item total">
+                                        <span class="label">Prezzo:</span>
+                                        <span class="value" id="summaryPrice">-</span>
+                                    </div>
+                                </div>
+                                <div class="summary-card">
+                                    <h4>I Tuoi Dati</h4>
+                                    <div class="summary-item">
+                                        <span class="label">Nome:</span>
+                                        <span class="value" id="summaryName">-</span>
+                                    </div>
+                                    <div class="summary-item">
+                                        <span class="label">Email:</span>
+                                        <span class="value" id="summaryEmail">-</span>
+                                    </div>
+                                    <div class="summary-item">
+                                        <span class="label">Telefono:</span>
+                                        <span class="value" id="summaryPhone">-</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-buttons">
+                                <button type="button" class="btn-prev" onclick="prevStep()">Indietro</button>
+                                <button type="submit" class="btn-submit">
+                                    <i class="fas fa-check"></i>
+                                    Conferma Prenotazione
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Booking Info Sidebar -->
+                <div class="booking-info">
+                    <div class="info-card">
+                        <h4>Informazioni Utili</h4>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Orari di Apertura</strong>
+                                <p>Lun-Ven: 9:00 - 19:00<br>Sabato: 9:00 - 17:00<br>Domenica: Chiuso</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-calendar-times"></i>
+                            <div>
+                                <strong>Cancellazioni</strong>
+                                <p>Cancellazione gratuita fino a 24 ore prima dell'appuntamento</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <strong>Sicurezza</strong>
+                                <p>Tutti gli strumenti sono sterilizzati secondo i protocolli sanitari</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h4>Contatti Diretti</h4>
+                        <div class="contact-methods">
+                            <a href="tel:+390612345678" class="contact-method">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <strong>Telefono</strong>
+                                    <span>+39 06 123 456 789</span>
+                                </div>
+                            </a>
+                            <a href="https://wa.me/390612345678" class="contact-method">
+                                <i class="fab fa-whatsapp"></i>
+                                <div>
+                                    <strong>WhatsApp</strong>
+                                    <span>Messaggio diretto</span>
+                                </div>
+                            </a>
+                            <a href="mailto:info@semplicementenails.it" class="contact-method">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <strong>Email</strong>
+                                    <span>info@semplicementenails.it</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h4>Preparazione</h4>
+                        <div class="preparation-tips">
+                            <div class="tip">
+                                <i class="fas fa-hand-paper"></i>
+                                <p>Rimuovi lo smalto esistente prima dell'appuntamento</p>
+                            </div>
+                            <div class="tip">
+                                <i class="fas fa-clock"></i>
+                                <p>Arriva 5 minuti prima per il check-in</p>
+                            </div>
+                            <div class="tip">
+                                <i class="fas fa-heart"></i>
+                                <p>Porta le tue idee e ispirazioni per la nail art</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Domande Frequenti</h2>
+                <p>Tutto quello che devi sapere sulle prenotazioni</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Posso modificare o cancellare la mia prenotazione?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sì, puoi modificare o cancellare la tua prenotazione fino a 24 ore prima dell'appuntamento senza alcun costo. Contattaci telefonicamente o via WhatsApp.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Quanto tempo prima devo prenotare?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ti consigliamo di prenotare almeno 2-3 giorni in anticipo, specialmente per i weekend. Per servizi più lunghi come la ricostruzione, è meglio prenotare con una settimana di anticipo.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Cosa succede se arrivo in ritardo?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Se arrivi in ritardo, faremo del nostro meglio per accoglierti, ma potrebbe essere necessario ridurre il tempo del trattamento o riprogrammare l'appuntamento.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Accettate pagamenti con carta?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sì, accettiamo contanti, carte di credito/debito e pagamenti digitali. Il pagamento avviene al termine del trattamento.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Posso portare il mio smalto?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Certamente! Se hai un colore particolare che ami, portalo pure. Utilizziamo solo prodotti professionali, ma siamo felici di usare il tuo smalto preferito.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Offrite servizi per eventi speciali?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sì! Offriamo pacchetti speciali per matrimoni, feste e eventi. Contattaci per discutere le tue esigenze e creare un pacchetto personalizzato.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-gem"></i>
+                        <span>Nails</span>
+                    </div>
+                    <p>Il tuo centro estetico di fiducia nel cuore di Grottaferrata. Bellezza, qualità e professionalità dal 2022.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Servizi</h4>
+                    <ul>
+                        <li><a href="servizi.html">Manicure</a></li>
+                        <li><a href="servizi.html">Pedicure</a></li>
+                        <li><a href="servizi.html">Ricostruzione</a></li>
+                        <li><a href="servizi.html">Nail Art</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Informazioni</h4>
+                    <ul>
+                        <li><a href="chi-siamo.html">Chi Siamo</a></li>
+                        <li><a href="prezzi.html">Listino Prezzi</a></li>
+                        <li><a href="galleria.html">Galleria</a></li>
+                        <li><a href="contatti.html">Contatti</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contatti</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Via Giuseppe Garibaldi 18, Grottaferrata (RM)</p>
+                        <p><i class="fas fa-phone"></i> +39 06 123 456 789</p>
+                        <p><i class="fas fa-envelope"></i> info@nails.it</p>
+                    </div>
+                    <div class="opening-hours">
+                        <h5>Orari di Apertura</h5>
+                        <p>Lun-Ven: 9:00 - 19:00<br>Sabato: 9:00 - 17:00<br>Domenica: Chiuso</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nails. Tutti i diritti riservati. | Privacy Policy | Cookie Policy</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

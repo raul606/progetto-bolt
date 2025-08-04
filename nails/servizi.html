@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servizi - Nails</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-gem"></i>
+                <span>Nails</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="chi-siamo.html" class="nav-link">Chi Siamo</a></li>
+                <li><a href="servizi.html" class="nav-link active">Servizi</a></li>
+                <li><a href="galleria.html" class="nav-link">Galleria</a></li>
+                <li><a href="prezzi.html" class="nav-link">Prezzi</a></li>
+                <li><a href="prenotazioni.html" class="nav-link">Prenotazioni</a></li>
+                <li><a href="contatti.html" class="nav-link">Contatti</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="nail-polish-drip drip-1"></div>
+        <div class="nail-polish-drip drip-2"></div>
+        <div class="container">
+            <h1>I Nostri Servizi</h1>
+            <p>Trattamenti esclusivi per la bellezza delle tue unghie</p>
+        </div>
+    </section>
+
+    <!-- Services Categories -->
+    <section class="services-categories">
+        <div class="container">
+            <div class="categories-grid">
+                <div class="category-card" data-category="manicure">
+                    <div class="category-icon">
+                        <i class="fas fa-hand-sparkles"></i>
+                    </div>
+                    <h3>Manicure</h3>
+                    <p>Trattamenti completi per mani perfette</p>
+                </div>
+                <div class="category-card" data-category="pedicure">
+                    <div class="category-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Pedicure</h3>
+                    <p>Cura professionale per i tuoi piedi</p>
+                </div>
+                <div class="category-card" data-category="ricostruzione">
+                    <div class="category-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Ricostruzione</h3>
+                    <p>Unghie perfette e resistenti</p>
+                </div>
+                <div class="category-card" data-category="nail-art">
+                    <div class="category-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Nail Art</h3>
+                    <p>Decorazioni artistiche uniche</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Manicure Services -->
+    <section class="service-section" id="manicure">
+        <div class="container">
+            <div class="section-header">
+                <h2>Servizi Manicure</h2>
+                <p>Cura completa delle mani con prodotti di alta qualità</p>
+            </div>
+            <div class="services-detailed">
+                <div class="service-detail">
+                    <div class="service-image">
+                        <div class="image-placeholder manicure-classic">
+                            <i class="fas fa-hand-sparkles"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Manicure Classica</h3>
+                        <div class="service-price">€20</div>
+                        <p class="service-description">
+                            Il trattamento base per mani curate e ordinate. Include limatura delle unghie, 
+                            cura delle cuticole, massaggio rilassante alle mani e applicazione di smalto tradizionale.
+                        </p>
+                        <div class="service-includes">
+                            <h4>Il trattamento include:</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Limatura e modellatura unghie</li>
+                                <li><i class="fas fa-check"></i> Cura e rimozione cuticole</li>
+                                <li><i class="fas fa-check"></i> Massaggio mani con crema nutriente</li>
+                                <li><i class="fas fa-check"></i> Base coat, smalto e top coat</li>
+                            </ul>
+                        </div>
+                        <div class="service-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>Durata: 45 minuti</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-detail">
+                    <div class="service-content">
+                        <h3>Semipermanente Mani</h3>
+                        <div class="service-price">€30</div>
+                        <p class="service-description">
+                            Smalto gel che dura fino a 3 settimane senza scheggiature. Perfetto per chi desidera 
+                            unghie sempre perfette con una vasta gamma di colori disponibili.
+                        </p>
+                        <div class="service-includes">
+                            <h4>Il trattamento include:</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Preparazione completa dell'unghia</li>
+                                <li><i class="fas fa-check"></i> Applicazione gel base</li>
+                                <li><i class="fas fa-check"></i> Due mani di colore</li>
+                                <li><i class="fas fa-check"></i> Top coat sigillante</li>
+                                <li><i class="fas fa-check"></i> Catalizzazione UV/LED</li>
+                            </ul>
+                        </div>
+                        <div class="service-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>Durata: 60 minuti</span>
+                        </div>
+                    </div>
+                    <div class="service-image">
+                        <div class="image-placeholder semipermanente">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pedicure Services -->
+    <section class="service-section" id="pedicure">
+        <div class="container">
+            <div class="section-header">
+                <h2>Servizi Pedicure</h2>
+                <p>Benessere e bellezza per i tuoi piedi</p>
+            </div>
+            <div class="services-detailed">
+                <div class="service-detail">
+                    <div class="service-image">
+                        <div class="image-placeholder pedicure">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Pedicure Estetico</h3>
+                        <div class="service-price">€25</div>
+                        <p class="service-description">
+                            Trattamento completo per piedi belli e sani. Include pediluvio rilassante, 
+                            rimozione callosità, cura delle unghie e massaggio rigenerante.
+                        </p>
+                        <div class="service-includes">
+                            <h4>Il trattamento include:</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Pediluvio con sali aromatici</li>
+                                <li><i class="fas fa-check"></i> Rimozione callosità e pelle morta</li>
+                                <li><i class="fas fa-check"></i> Limatura e cura unghie</li>
+                                <li><i class="fas fa-check"></i> Massaggio piedi e caviglie</li>
+                                <li><i class="fas fa-check"></i> Applicazione smalto</li>
+                            </ul>
+                        </div>
+                        <div class="service-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>Durata: 60 minuti</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-detail">
+                    <div class="service-content">
+                        <h3>Semipermanente Piedi</h3>
+                        <div class="service-price">€28</div>
+                        <p class="service-description">
+                            Smalto gel per piedi che garantisce durata e brillantezza per settimane. 
+                            Ideale per l'estate o per chi pratica sport.
+                        </p>
+                        <div class="service-includes">
+                            <h4>Il trattamento include:</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Pedicure estetico completo</li>
+                                <li><i class="fas fa-check"></i> Preparazione unghie per gel</li>
+                                <li><i class="fas fa-check"></i> Applicazione gel semipermanente</li>
+                                <li><i class="fas fa-check"></i> Catalizzazione e finitura</li>
+                            </ul>
+                        </div>
+                        <div class="service-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>Durata: 75 minuti</span>
+                        </div>
+                    </div>
+                    <div class="service-image">
+                        <div class="image-placeholder semipermanente-piedi">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reconstruction Services -->
+    <section class="service-section" id="ricostruzione">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ricostruzione Unghie</h2>
+                <p>Unghie perfette, forti e durature</p>
+            </div>
+            <div class="services-detailed">
+                <div class="service-detail">
+                    <div class="service-image">
+                        <div class="image-placeholder ricostruzione">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>Ricostruzione Gel</h3>
+                        <div class="service-price">€50</div>
+                        <p class="service-description">
+                            Ricostruzione completa delle unghie con gel di alta qualità. Perfetta per chi ha 
+                            unghie fragili o desidera una lunghezza maggiore con risultati naturali.
+                        </p>
+                        <div class="service-includes">
+                            <h4>Il trattamento include:</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Preparazione completa dell'unghia naturale</li>
+                                <li><i class="fas fa-check"></i> Applicazione tip o cartine (se necessario)</li>
+                                <li><i class="fas fa-check"></i> Stesura gel costruttore</li>
+                                <li><i class="fas fa-check"></i> Modellatura e limatura</li>
+                                <li><i class="fas fa-check"></i> Lucidatura e finitura</li>
+                            </ul>
+                        </div>
+                        <div class="service-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>Durata: 120 minuti</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-detail">
+                    <div class="service-content">
+                        <h3>Refill Unghie</h3>
+                        <div class="service-price">€35</div>
+                        <p class="service-description">
+                            Ritocco della ricrescita per mantenere le unghie ricostruite sempre perfette. 
+                            Consigliato ogni 2-3 settimane.
+                        </p>
+                        <div class="service-includes">
+                            <h4>Il trattamento include:</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Limatura della ricrescita</li>
+                                <li><i class="fas fa-check"></i> Riempimento con gel</li>
+                                <li><i class="fas fa-check"></i> Rimodellatura</li>
+                                <li><i class="fas fa-check"></i> Lucidatura finale</li>
+                            </ul>
+                        </div>
+                        <div class="service-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>Durata: 90 minuti</span>
+                        </div>
+                    </div>
+                    <div class="service-image">
+                        <div class="image-placeholder refill">
+                            <i class="fas fa-redo"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nail Art Services -->
+    <section class="service-section" id="nail-art">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nail Art</h2>
+                <p>Trasforma le tue unghie in piccole opere d'arte</p>
+            </div>
+            <div class="nail-art-gallery">
+                <div class="nail-art-item">
+                    <div class="nail-art-image">
+                        <div class="image-placeholder nail-art-1">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                    </div>
+                    <h4>Nail Art Base</h4>
+                    <p>Decorazioni semplici e raffinate</p>
+                    <div class="price">€5</div>
+                </div>
+                <div class="nail-art-item">
+                    <div class="nail-art-image">
+                        <div class="image-placeholder nail-art-2">
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <h4>Nail Art Avanzata</h4>
+                    <p>Decorazioni elaborate e dettagliate</p>
+                    <div class="price">€15</div>
+                </div>
+                <div class="nail-art-item">
+                    <div class="nail-art-image">
+                        <div class="image-placeholder nail-art-3">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                    </div>
+                    <h4>Nail Art Premium</h4>
+                    <p>Creazioni artistiche con strass e decorazioni</p>
+                    <div class="price">€25</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Services -->
+    <section class="additional-services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Servizi Aggiuntivi</h2>
+                <p>Completiamo la tua esperienza di bellezza</p>
+            </div>
+            <div class="additional-grid">
+                <div class="additional-item">
+                    <i class="fas fa-eraser"></i>
+                    <h4>Rimozione Smalto</h4>
+                    <p>Rimozione professionale e sicura di smalto tradizionale o semipermanente</p>
+                    <div class="price">€10</div>
+                </div>
+                <div class="additional-item">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <h4>Trattamento Mani</h4>
+                    <p>Maschera nutriente e massaggio intensivo per mani morbide e idratate</p>
+                    <div class="price">€15</div>
+                </div>
+                <div class="additional-item">
+                    <i class="fas fa-seedling"></i>
+                    <h4>Trattamento Cuticole</h4>
+                    <p>Cura specifica per cuticole secche e danneggiate con oli nutrienti</p>
+                    <div class="price">€8</div>
+                </div>
+                <div class="additional-item">
+                    <i class="fas fa-magic"></i>
+                    <h4>French Manicure</h4>
+                    <p>Il classico intramontabile per un look elegante e raffinato</p>
+                    <div class="price">€5</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Pronta a Scegliere il Tuo Trattamento?</h2>
+                <p>Prenota il tuo appuntamento e lasciati coccolare dalle nostre esperte</p>
+                <div class="cta-buttons">
+                    <a href="prenotazioni.html" class="btn-primary">
+                        <i class="fas fa-calendar-alt"></i>
+                        Prenota Ora
+                    </a>
+                    <a href="prezzi.html" class="btn-outline">
+                        <i class="fas fa-list"></i>
+                        Vedi Tutti i Prezzi
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-gem"></i>
+                        <span>Nails</span>
+                    </div>
+                    <p>Il tuo centro estetico di fiducia nel cuore di Grottaferrata. Bellezza, qualità e professionalità dal 2022.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Servizi</h4>
+                    <ul>
+                        <li><a href="servizi.html">Manicure</a></li>
+                        <li><a href="servizi.html">Pedicure</a></li>
+                        <li><a href="servizi.html">Ricostruzione</a></li>
+                        <li><a href="servizi.html">Nail Art</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Informazioni</h4>
+                    <ul>
+                        <li><a href="chi-siamo.html">Chi Siamo</a></li>
+                        <li><a href="prezzi.html">Listino Prezzi</a></li>
+                        <li><a href="galleria.html">Galleria</a></li>
+                        <li><a href="contatti.html">Contatti</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contatti</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Via Giuseppe Garibaldi 18, Grottaferrata (RM)</p>
+                        <p><i class="fas fa-phone"></i> +39 06 123 456 789</p>
+                        <p><i class="fas fa-envelope"></i> info@nails.it</p>
+                    </div>
+                    <div class="opening-hours">
+                        <h5>Orari di Apertura</h5>
+                        <p>Lun-Ven: 9:00 - 19:00<br>Sabato: 9:00 - 17:00<br>Domenica: Chiuso</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nails. Tutti i diritti riservati. | Privacy Policy | Cookie Policy</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
